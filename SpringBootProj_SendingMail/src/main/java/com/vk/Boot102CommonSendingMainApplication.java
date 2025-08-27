@@ -10,12 +10,17 @@ import com.vk.service.ShoppingMgmtService;
 public class Boot102CommonSendingMainApplication {
 
 	public static void main(String[] args) {
-		// getting Ioc container
+		
+//...........   getting Ioc container .................
+		
 		try(ConfigurableApplicationContext ctx=SpringApplication.run(Boot102CommonSendingMainApplication.class, args);)
 		{
-				// get Spring bean class obj ref
+//............   get Spring bean class object reference ...........
+			
 				ShoppingMgmtService service = ctx.getBean("sms", ShoppingMgmtService.class);
-				// invoke the buisness method
+
+// ...........  invoking  buisness method  .........................
+				
 				try {
 					String resultMsg=service.purchase(new String[] {"Mobile","charger","Earbuds"},
 	    			 new double[] {90000,2500,3600},
