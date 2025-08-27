@@ -17,9 +17,9 @@ public class Boot102CommonSendingMainApplication {
 				ShoppingMgmtService service = ctx.getBean("sms", ShoppingMgmtService.class);
 				// invoke the buisness method
 				try {
-					String resultMsg=service.purchase(new String[] {"shirt","trouser","hat"},
-	    			 new double[] {2000,4000,3000},
-	    			 new String[] {"mukeshkamble63119@gmail.com","vkditofficial@gmail.com"});
+					String resultMsg=service.purchase(new String[] {"Mobile","charger","Earbuds"},
+	    			 new double[] {90000,2500,3600},
+	    			 new String[] {"dolasevivek27@gmail.com","vkditofficial@gmail.com"});
 					System.out.println(resultMsg);
 					}catch(Exception e)
 					{
