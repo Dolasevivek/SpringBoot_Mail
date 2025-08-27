@@ -43,7 +43,9 @@ private String triggerEmail(String msg,String[]toMailids) throws Exception{
 	helper.setCc(toMailids);
 	helper.setSentDate(new Date());
 	helper.setText(msg);
-	helper.addAttachment("nit.jpg.png", new ClassPathResource("nit.jpg.png"));
+	helper.addAttachment("apple.jpg", new ClassPathResource("apple.jpg"));
+	helper.addAttachment("charger.jpg", new ClassPathResource("charger.jpg"));
+	helper.addAttachment("earbuds.jpeg", new ClassPathResource("earbuds.jpeg"));
 	// send the Email Message
    sender.send(message);
    return "email message is sent";
