@@ -24,7 +24,7 @@ public class Boot102CommonSendingMainApplication {
 				try {
 					String resultMsg=service.purchase(new String[] {"Mobile","charger","Earbuds"},
 	    			 new double[] {90000,2500,3600},
-	    			 new String[] {"dolasevivek27@gmail.com","vkditofficial@gmail.com"});
+	    			 new String[] {"dolasevivek27@gmail.com","vkditofficial@gmail.com"});// target email 
 					System.out.println(resultMsg);
 					}catch(Exception e)
 					{
